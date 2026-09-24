@@ -1,0 +1,1091 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Guía de separación de residuos y directorio de servicios poco conocidos en Cajicá, Zipaquirá y la Sabana Centro: trueque de reciclaje por comida, capacitaciones gratis, posconsumo, aceite, ropa y tapas.">
+<meta property="og:title" content="Separa en la Sabana">
+<meta property="og:description" content="Dónde cambiar reciclaje por comida, cómo pedir una capacitación gratis y a dónde llevar lo que no va en ninguna bolsa en Cajicá, Zipaquirá y la Sabana Centro.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#2A7448">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 160'%3E%3Cpath fill='%232F8A55' stroke='%2317201A' stroke-width='4' d='M52 30 C44 22 33 13 22 6 C37 9 50 16 57 25 Z M68 30 C76 22 87 13 98 6 C83 9 70 16 63 25 Z M50 33 C39 37 29 45 23 57 C13 78 11 105 15 129 C18 147 34 155 60 155 C86 155 102 147 105 129 C109 105 107 78 97 57 C91 45 81 37 70 33 Z'/%3E%3C/svg%3E">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Separa en la Sabana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#EDF0E8; --surface:#FAFBF7; --surface-2:#E2E8DC; --ink:#17201A; --ink-2:#4B574F; --line:#CCD4C6;
+  --verde:#2A7448; --verde-ink:#1F5A37; --verde-soft:#D5E7D8;
+  --criolla:#EFB22A; --criolla-soft:#F7E5B3; --on-criolla:#17201A;
+  --bag-white:#FFFFFF; --bag-green:#2F8A55; --bag-black:#1A1D1B; --bag-stroke:#17201A;
+  --focus:#1F5A37;
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#111612; --surface:#172019; --surface-2:#1F2A22; --ink:#E4EBE2; --ink-2:#A3B0A6; --line:#2D3930;
+    --verde:#6CC48F; --verde-ink:#92D8AD; --verde-soft:#1C3325;
+    --criolla:#F2C04B; --criolla-soft:#3A3016; --on-criolla:#17201A;
+    --bag-white:#F1F4EE; --bag-green:#3F9C64; --bag-black:#050706; --bag-stroke:#8C9A90;
+    --focus:#92D8AD;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#111612; --surface:#172019; --surface-2:#1F2A22; --ink:#E4EBE2; --ink-2:#A3B0A6; --line:#2D3930;
+  --verde:#6CC48F; --verde-ink:#92D8AD; --verde-soft:#1C3325;
+  --criolla:#F2C04B; --criolla-soft:#3A3016; --on-criolla:#17201A;
+  --bag-white:#F1F4EE; --bag-green:#3F9C64; --bag-black:#050706; --bag-stroke:#8C9A90;
+  --focus:#92D8AD;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--ground); color:var(--ink);
+  font-family:var(--body); font-size:16.5px; line-height:1.55;
+  padding-inline:20px; padding-block:0 48px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1120px; margin-inline:auto}
+a{color:var(--verde-ink); text-underline-offset:3px; text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--focus); outline-offset:2px; border-radius:4px}
+h1,h2,h3{font-family:var(--display); text-wrap:balance; margin:0}
+p{margin:0}
+.mono{font-family:var(--mono); font-variant-numeric:tabular-nums}
+.label{font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-2)}
+
+/* ---------- top bar ---------- */
+.top{display:flex; flex-wrap:wrap; gap:12px 24px; align-items:center; justify-content:space-between; padding-block:18px; border-bottom:1px solid var(--line)}
+.brand{font-family:var(--display); font-weight:800; font-stretch:115%; font-size:18px; letter-spacing:-.01em; display:flex; align-items:center; gap:10px; color:var(--ink); text-decoration:none}
+.brand svg{width:22px; height:28px}
+.top nav{display:flex; flex-wrap:wrap; gap:6px 18px}
+.top nav a{color:var(--ink-2); text-decoration:none; font-size:15px}
+.top nav a:hover{color:var(--ink); text-decoration:underline}
+
+/* ---------- hero ---------- */
+.hero{display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:40px; align-items:end; padding-block:56px 40px}
+.hero .eyebrow{display:flex; flex-wrap:wrap; gap:6px 16px; margin-bottom:18px}
+.hero h1{font-weight:850; font-stretch:122%; font-size:clamp(2.5rem,6.4vw,4.9rem); line-height:.93; letter-spacing:-.02em}
+.hero h1 em{font-style:normal; color:var(--verde)}
+.hero .lede{margin-top:22px; font-size:1.15rem; max-width:34em; color:var(--ink)}
+.hero .facts{margin-top:22px; display:flex; flex-wrap:wrap; gap:8px 20px; color:var(--ink-2); font-size:15px}
+.hero .facts strong{color:var(--ink); font-family:var(--mono); font-weight:500}
+.bags{display:flex; gap:clamp(10px,2vw,22px); align-items:flex-end; justify-content:center; padding-bottom:10px; border-bottom:2px solid var(--ink)}
+.bag{display:flex; flex-direction:column; align-items:center; gap:8px; flex:1; max-width:140px}
+.bag svg{width:100%; height:auto; overflow:visible}
+.bag .name{font-family:var(--mono); font-size:12px; letter-spacing:.1em; text-transform:uppercase}
+.bag:nth-child(2) svg{transform:translateY(-6px) rotate(2deg)}
+.bag:nth-child(1) svg{transform:rotate(-3deg)}
+.b-white{fill:var(--bag-white); stroke:var(--bag-stroke); stroke-width:2.2}
+.b-green{fill:var(--bag-green); stroke:var(--bag-stroke); stroke-width:2.2}
+.b-black{fill:var(--bag-black); stroke:var(--bag-stroke); stroke-width:2.2}
+.bags-cap{margin-top:10px; font-size:14px; color:var(--ink-2); text-align:center}
+
+/* ---------- now strip ---------- */
+.now{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; border:1px solid var(--line); border-radius:10px; background:var(--surface); overflow:hidden}
+.now article{padding:18px 20px; display:flex; flex-direction:column; gap:6px}
+.now article + article{border-left:1px solid var(--line)}
+.now .when{font-family:var(--mono); font-size:13px; font-weight:500; letter-spacing:.04em}
+.now .hot .when{display:inline-block; align-self:flex-start; background:var(--criolla); color:var(--on-criolla); padding:2px 8px; border-radius:4px}
+.now p{font-size:15px}
+.now h3{font-size:1.05rem; font-weight:700; font-stretch:100%}
+
+/* ---------- sections ---------- */
+section.block{padding-block:64px 8px}
+.sec-head{display:grid; grid-template-columns:minmax(0,1fr); gap:10px; margin-bottom:26px; max-width:46em}
+.sec-head h2{font-weight:800; font-stretch:112%; font-size:clamp(1.8rem,3.6vw,2.5rem); line-height:1.02; letter-spacing:-.015em}
+.sec-head p{color:var(--ink-2); font-size:1.05rem}
+
+/* ---------- guide ---------- */
+.guide{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px}
+.bin{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:20px; display:flex; flex-direction:column; gap:12px}
+.bin-head{display:flex; gap:14px; align-items:center}
+.bin-head svg{width:44px; height:58px; flex:none}
+.bin-head h3{font-size:1.35rem; font-weight:800; font-stretch:115%}
+.bin-head .label{display:block; margin-top:2px}
+.bin ul{margin:0; padding-left:1.1em; display:grid; gap:4px}
+.bin .tip{font-size:14.5px; color:var(--ink-2); border-top:1px dashed var(--line); padding-top:10px}
+.local{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin-top:16px}
+.local article{padding:18px 20px; border-left:3px solid var(--verde); background:var(--surface-2); border-radius:0 8px 8px 0; display:flex; flex-direction:column; gap:8px}
+.local h3{font-size:1.1rem; font-weight:700; font-stretch:105%}
+.local p{font-size:15.5px}
+.local .src{font-size:13.5px; color:var(--ink-2)}
+.none{margin-top:16px; display:flex; flex-wrap:wrap; gap:14px 24px; align-items:center; justify-content:space-between; padding:18px 20px; border:2px dashed var(--ink-2); border-radius:10px}
+.none p{max-width:44em}
+.none strong{font-family:var(--display); font-stretch:110%; font-weight:800}
+
+/* ---------- buttons ---------- */
+.btn{font:inherit; font-size:15px; font-weight:700; border:1.5px solid var(--ink); background:var(--ink); color:var(--ground); padding:9px 16px; border-radius:999px; cursor:pointer; text-decoration:none; display:inline-flex; align-items:center; gap:8px; white-space:nowrap}
+.btn:hover{background:var(--verde-ink); border-color:var(--verde-ink)}
+.btn.ghost{background:transparent; color:var(--ink)}
+.btn.ghost:hover{background:var(--surface-2); color:var(--ink); border-color:var(--ink)}
+.copy{font-family:var(--mono); font-size:12px; border:1px solid var(--line); background:var(--surface); color:var(--ink-2); padding:3px 8px; border-radius:5px; cursor:pointer; flex:none}
+.copy:hover{color:var(--ink); border-color:var(--ink-2)}
+.copy.done{color:var(--verde-ink); border-color:var(--verde)}
+
+/* ---------- directory ---------- */
+.filters{display:flex; flex-direction:column; gap:14px; padding:18px 20px; background:var(--surface); border:1px solid var(--line); border-radius:10px; margin-bottom:20px}
+.frow{display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px}
+.frow > .label{min-width:84px}
+.chip{font:inherit; font-size:14.5px; border:1px solid var(--line); background:var(--ground); color:var(--ink); padding:6px 13px; border-radius:999px; cursor:pointer}
+.chip:hover{border-color:var(--ink-2)}
+.chip[aria-pressed="true"]{background:var(--ink); color:var(--ground); border-color:var(--ink)}
+.chip .n{font-family:var(--mono); font-size:12px; opacity:.7; margin-left:4px}
+.search{font:inherit; font-size:15px; flex:1 1 240px; min-width:0; padding:8px 12px; border:1px solid var(--line); border-radius:8px; background:var(--ground); color:var(--ink)}
+.search::placeholder{color:var(--ink-2)}
+.count{font-size:14.5px; color:var(--ink-2)}
+.count strong{color:var(--ink); font-family:var(--mono); font-weight:500}
+
+.cards{columns:2 380px; column-gap:16px}
+.card{break-inside:avoid; margin:0 0 16px; background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:20px; display:flex; flex-direction:column; gap:12px}
+.card-top{display:flex; flex-wrap:wrap; gap:8px; align-items:center; justify-content:space-between}
+.pill{font-family:var(--mono); font-size:12px; font-weight:500; padding:3px 9px; border-radius:999px; white-space:nowrap}
+.pill.ok{background:var(--verde-soft); color:var(--verde-ink)}
+.pill.hot{background:var(--criolla); color:var(--on-criolla)}
+.pill.off{background:var(--surface-2); color:var(--ink-2)}
+.pill.neutral{border:1px solid var(--line); color:var(--ink-2)}
+.card h3{font-size:1.28rem; font-weight:760; font-stretch:104%; line-height:1.15}
+.card .org{font-size:14.5px; color:var(--ink-2); margin-top:-6px}
+.card .munis{display:flex; flex-wrap:wrap; gap:6px}
+.card .muni{font-family:var(--mono); font-size:11.5px; letter-spacing:.05em; text-transform:uppercase; border:1px solid var(--line); padding:1px 7px; border-radius:4px; color:var(--ink-2)}
+.card dl{margin:0; display:grid; gap:10px}
+.card dt{font-family:var(--mono); font-size:11.5px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-2)}
+.card dd{margin:2px 0 0; font-size:15.5px}
+.contacts{display:grid; gap:6px; border-top:1px solid var(--line); padding-top:12px}
+.crow{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:0 10px; align-items:center}
+.crow .cl{grid-column:1 / -1; font-size:12.5px; color:var(--ink-2)}
+.crow .cv{font-family:var(--mono); font-size:13.5px; user-select:all; overflow-wrap:anywhere; min-width:0}
+.card .go{align-self:flex-start}
+.card .src{font-size:13px; color:var(--ink-2); display:flex; flex-wrap:wrap; gap:2px 10px}
+.card .src a{color:var(--ink-2)}
+.empty{padding:28px; text-align:center; border:1px dashed var(--line); border-radius:10px; color:var(--ink-2)}
+
+/* ---------- request builder ---------- */
+.steps{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin-bottom:22px; counter-reset:s}
+.steps li{list-style:none; display:flex; gap:12px; align-items:flex-start}
+.steps li::before{counter-increment:s; content:counter(s); font-family:var(--display); font-weight:850; font-stretch:120%; font-size:2rem; line-height:1; color:var(--verde)}
+.steps{padding:0; margin-top:0}
+.steps p{font-size:15px}
+.steps strong{display:block; font-size:16px}
+.builder{display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:20px; align-items:start}
+.form{display:grid; gap:12px; background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:20px}
+.form .two{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:12px}
+.form label{display:grid; gap:4px; font-size:14px; color:var(--ink-2)}
+.form input,.form select{font:inherit; font-size:15.5px; color:var(--ink); background:var(--ground); border:1px solid var(--line); border-radius:8px; padding:8px 10px; width:100%; min-width:0}
+.sendto{display:grid; gap:6px; padding:12px 14px; background:var(--surface-2); border-radius:8px}
+.letter-wrap{display:flex; flex-direction:column; gap:10px}
+.letter{background:var(--bag-white); color:#1b221d; border:1px solid var(--line); border-radius:6px; padding:26px 26px 30px; font-size:15.5px; line-height:1.6; white-space:pre-wrap; overflow-wrap:anywhere; box-shadow:0 1px 0 var(--line), 0 12px 24px -18px rgba(0,0,0,.35)}
+.letter .ph{background:#F7E5B3; color:#5a4200; border-radius:3px; padding:0 3px}
+.letter-actions{display:flex; flex-wrap:wrap; gap:10px; align-items:center}
+.note{font-size:14px; color:var(--ink-2)}
+
+/* ---------- utilities ---------- */
+.basics{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px}
+.basics article{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:20px; display:flex; flex-direction:column; gap:10px}
+.basics h3{font-size:1.2rem; font-weight:780; font-stretch:108%}
+.basics ul{margin:0; padding-left:1.1em; display:grid; gap:5px}
+.basics .contact{font-size:14px; color:var(--ink-2); border-top:1px solid var(--line); padding-top:10px}
+
+/* ---------- sources ---------- */
+.sources{columns:2 360px; column-gap:28px; margin:0; padding-left:1.2em; font-size:14.5px}
+.sources li{break-inside:avoid; margin-bottom:6px}
+.sources .for{color:var(--ink-2)}
+.method{max-width:48em; color:var(--ink-2); font-size:15px; margin-bottom:18px}
+footer{margin-top:56px; padding-top:18px; border-top:1px solid var(--line); display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-between; font-size:14px; color:var(--ink-2)}
+
+@media (max-width: 860px){
+  .hero{grid-template-columns:minmax(0,1fr); padding-block:36px 28px; gap:28px}
+  .bags{max-width:420px}
+  .now{grid-template-columns:minmax(0,1fr)}
+  .now article + article{border-left:0; border-top:1px solid var(--line)}
+  .guide,.local,.basics,.steps,.builder{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width: 460px){
+  body{padding-inline:16px}
+  .form .two{grid-template-columns:minmax(0,1fr)}
+  .frow > .label{min-width:0; width:100%}
+  .letter{padding:18px}
+}
+@media (prefers-reduced-motion: no-preference){
+  .chip,.btn,.copy{transition:background-color .15s, color .15s, border-color .15s}
+  .card{animation:rise .28s ease-out both}
+  @keyframes rise{from{transform:translateY(4px)} to{transform:none}}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="bag" viewBox="0 0 120 160">
+    <path d="M52 30 C44 22 33 13 22 6 C37 9 50 16 57 25 Z"/>
+    <path d="M68 30 C76 22 87 13 98 6 C83 9 70 16 63 25 Z"/>
+    <path d="M50 33 C39 37 29 45 23 57 C13 78 11 105 15 129 C18 147 34 155 60 155 C86 155 102 147 105 129 C109 105 107 78 97 57 C91 45 81 37 70 33 Z"/>
+    <rect x="49" y="23" width="22" height="11" rx="4"/>
+    <path d="M40 72 C45 92 43 114 36 136" fill="none" stroke-opacity=".35"/>
+    <path d="M78 66 C82 84 84 104 82 124" fill="none" stroke-opacity=".25"/>
+  </symbol>
+</svg>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#inicio" aria-label="Separa en la Sabana, inicio">
+      <svg viewBox="0 0 120 160" class="b-green" aria-hidden="true"><use href="#bag"/></svg>
+      Separa en la Sabana
+    </a>
+    <nav aria-label="Secciones">
+      <a href="#separar">Cómo separar</a>
+      <a href="#directorio">Directorio</a>
+      <a href="#capacitacion">Pedir capacitación</a>
+      <a href="#empresas">EPC y EPZ</a>
+      <a href="#fuentes">Fuentes</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" aria-labelledby="h1">
+      <div>
+        <div class="eyebrow">
+          <span class="label">Cajicá · Zipaquirá · Sabana Centro</span>
+          <span class="label">Actualizada el 23 sep 2026</span>
+        </div>
+        <h1 id="h1">Más allá del <em>camión</em> de la basura</h1>
+        <p class="lede">Dónde cambiar reciclaje por comida, cómo pedir una capacitación gratis para tu conjunto o colegio, y a dónde llevar lo que no va en ninguna bolsa. Son servicios que no aparecen en las páginas de la EPC ni de la EPZ.</p>
+        <div class="facts">
+          <span><strong id="fact-n">17</strong> servicios con fuente</span>
+          <span><strong>6</strong> tipos</span>
+          <span><strong>1</strong> plantilla para pedir capacitación</span>
+        </div>
+      </div>
+      <figure style="margin:0">
+        <div class="bags" aria-hidden="true">
+          <div class="bag"><svg viewBox="0 0 120 160" class="b-white"><use href="#bag"/></svg><span class="name">Blanca</span></div>
+          <div class="bag"><svg viewBox="0 0 120 160" class="b-green"><use href="#bag"/></svg><span class="name">Verde</span></div>
+          <div class="bag"><svg viewBox="0 0 120 160" class="b-black"><use href="#bag"/></svg><span class="name">Negra</span></div>
+        </div>
+        <figcaption class="bags-cap">Código nacional de colores, Resolución 2184 de 2019</figcaption>
+      </figure>
+    </section>
+
+    <div class="now" aria-label="Fechas a tener en cuenta">
+      <article class="hot">
+        <span class="when">Cierra 30 sep 2026</span>
+        <h3>Concurso de prácticas ambientales de Cajicá</h3>
+        <p>Colegios, colectivos y comunidades pueden postular su experiencia con un video de un minuto. <a href="#s-concurso-cajica">Ver requisitos</a></p>
+      </article>
+      <article>
+        <span class="when">Activo en 2026</span>
+        <h3>Cambio Verde sigue haciendo jornadas</h3>
+        <p>En mayo se cambió 1 kg de reciclaje por 2 kg de pera en Villa de Leyva. Tu alcaldía o JAC puede pedirlo. <a href="#s-cambio-verde">Cómo</a></p>
+      </article>
+      <article>
+        <span class="when">14–16 sep 2026 · terminó</span>
+        <h3>Jornada posconsumo de la CAR</h3>
+        <p>Es anual. Mientras llega la próxima, usa los contenedores permanentes. <a href="#s-posconsumo-permanentes">Dónde están</a></p>
+      </article>
+    </div>
+
+    <!-- ================= GUIDE ================= -->
+    <section class="block" id="separar" aria-labelledby="h-separar">
+      <div class="sec-head">
+        <span class="label">Guía rápida</span>
+        <h2 id="h-separar">Tres bolsas y una regla: limpio y seco</h2>
+        <p>Desde 2021 todo el país usa el mismo código de colores. Un envase con restos de comida contamina el resto del reciclaje, así que enjuaga y escurre antes de separar.</p>
+      </div>
+
+      <div class="guide">
+        <article class="bin">
+          <div class="bin-head">
+            <svg viewBox="0 0 120 160" class="b-white" aria-hidden="true"><use href="#bag"/></svg>
+            <div><h3>Blanca</h3><span class="label">Aprovechables</span></div>
+          </div>
+          <ul>
+            <li>Plástico: botellas, envases, bolsas limpias</li>
+            <li>Vidrio sano</li>
+            <li>Metales: latas, tapas, aluminio</li>
+            <li>Papel y cartón secos</li>
+            <li>Multicapa (Tetra Pak)</li>
+          </ul>
+          <p class="tip">Es lo que recogen los recicladores de oficio. Si lo entregas limpio, vale más para ellos.</p>
+        </article>
+        <article class="bin">
+          <div class="bin-head">
+            <svg viewBox="0 0 120 160" class="b-green" aria-hidden="true"><use href="#bag"/></svg>
+            <div><h3>Verde</h3><span class="label">Orgánicos aprovechables</span></div>
+          </div>
+          <ul>
+            <li>Restos de comida y cáscaras</li>
+            <li>Cuncho de café y bolsitas de té</li>
+            <li>Residuos de huerta y agrícolas</li>
+            <li>Cáscaras de huevo</li>
+          </ul>
+          <p class="tip">Con esto se hace compost. En Cajicá va en la caneca verde de la EPC.</p>
+        </article>
+        <article class="bin">
+          <div class="bin-head">
+            <svg viewBox="0 0 120 160" class="b-black" aria-hidden="true"><use href="#bag"/></svg>
+            <div><h3>Negra</h3><span class="label">No aprovechables</span></div>
+          </div>
+          <ul>
+            <li>Papel higiénico y servilletas usadas</li>
+            <li>Papel y cartón manchados de comida</li>
+            <li>Empaques metalizados (paquetes de papas)</li>
+            <li>Barrido, colillas, chicles, heces de mascotas</li>
+          </ul>
+          <p class="tip">Va al relleno sanitario. Entre menos llenes esta bolsa, mejor.</p>
+        </article>
+      </div>
+
+      <div class="local">
+        <article>
+          <span class="label">Cajicá</span>
+          <h3>Ruta selectiva de reciclaje: lunes y martes</h3>
+          <p>Según la Alcaldía (Decreto 197 de 2024) la ruta recibe papel y cartón, plásticos (PET, PEAD, PVC), vidrio sano y limpio, metales, y textiles y electrónicos sin componentes peligrosos. No recibe orgánicos, pilas, químicos ni escombros.</p>
+          <p class="src">Fuente: <a href="https://cajica.gov.co/ruta-selectiva-de-reciclaje-en-cajica/" target="_blank" rel="noopener">Alcaldía de Cajicá, jul 2025</a></p>
+        </article>
+        <article>
+          <span class="label">Zipaquirá</span>
+          <h3>Orgánicos con horario propio</h3>
+          <p>La EPZ recoge orgánicos desde las 7 a.m. los martes y viernes, o los miércoles y sábados, según el sector; en zonas del centro también pasa lunes y jueves en la noche. Los reciclables los recoge la Asociación de Recicladores de Zipaquirá en rutas selectivas por unos 36 barrios.</p>
+          <p class="src">Fuentes: <a href="https://epz.gov.co/wp/horarios-de-recoleccion/" target="_blank" rel="noopener">EPZ horarios</a> · <a href="https://epz.gov.co/wp/asociacion-de-recicladores-de-zipaquira/" target="_blank" rel="noopener">EPZ, ARZ</a></p>
+        </article>
+      </div>
+
+      <div class="none">
+        <p><strong>Lo que no va en ninguna bolsa:</strong> pilas, medicamentos, bombillos, aparatos eléctricos, aceite de cocina, llantas y ropa. Tienen rutas propias.</p>
+        <button class="btn" type="button" id="go-posconsumo">Ver dónde entregarlos</button>
+      </div>
+    </section>
+
+    <!-- ================= DIRECTORY ================= -->
+    <section class="block" id="directorio" aria-labelledby="h-dir">
+      <div class="sec-head">
+        <span class="label">Directorio</span>
+        <h2 id="h-dir">Servicios que no están en la página de tu empresa de aseo</h2>
+        <p>Cada ficha trae cómo acceder, contacto y la fuente donde lo encontramos. Los servicios de toda la región aparecen en cualquier municipio que elijas.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filtrar servicios">
+        <div class="frow" id="f-muni">
+          <span class="label">Municipio</span>
+        </div>
+        <div class="frow" id="f-cat">
+          <span class="label">Tipo</span>
+        </div>
+        <div class="frow">
+          <label class="label" for="q">Buscar</label>
+          <input class="search" id="q" type="search" placeholder="pilas, ropa, colegio, verduras…" autocomplete="off">
+          <span class="count" id="count" aria-live="polite"></span>
+        </div>
+      </div>
+
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <!-- ================= REQUEST TRAINING ================= -->
+    <section class="block" id="capacitacion" aria-labelledby="h-cap">
+      <div class="sec-head">
+        <span class="label">Pedir capacitación</span>
+        <h2 id="h-cap">Arma tu solicitud de charla en dos minutos</h2>
+        <p>Las organizaciones de recicladores tienen el deber legal de capacitar a sus usuarios en separación, y la alcaldía debe hacer campañas educativas con ellas. Llena los datos y copia la carta.</p>
+      </div>
+
+      <ol class="steps">
+        <li><p><strong>Elige a quién pedirla</strong>Recicladores para una charla práctica; Secretaría o CAR si quieres una actividad más grande.</p></li>
+        <li><p><strong>Completa y copia</strong>La carta cita la norma que corresponde a cada destinatario.</p></li>
+        <li><p><strong>Envía y haz seguimiento</strong>Las entidades públicas deben responder un derecho de petición en 15 días hábiles.</p></li>
+      </ol>
+
+      <div class="builder">
+        <form class="form" id="req" autocomplete="off">
+          <label for="r-to">Destinatario
+            <select id="r-to"></select>
+          </label>
+          <div class="sendto" id="r-sendto" aria-live="polite"></div>
+          <div class="two">
+            <label for="r-name">Tu nombre<input id="r-name" type="text" placeholder="Nombre y apellido"></label>
+            <label for="r-role">Tu rol
+              <select id="r-role">
+                <option>administrador(a)</option>
+                <option>residente</option>
+                <option>integrante del consejo de administración</option>
+                <option>docente</option>
+                <option>rector(a)</option>
+                <option>presidente(a) de la JAC</option>
+                <option>comerciante</option>
+              </select>
+            </label>
+          </div>
+          <label for="r-place">Conjunto, colegio, barrio o negocio<input id="r-place" type="text" placeholder="Ej.: Conjunto Residencial …"></label>
+          <div class="two">
+            <label for="r-muni">Municipio
+              <select id="r-muni">
+                <option>Cajicá</option>
+                <option>Zipaquirá</option>
+                <option>Chía</option>
+                <option>Tocancipá</option>
+                <option>Sopó</option>
+                <option>Cogua</option>
+                <option>Tabio</option>
+                <option>Tenjo</option>
+                <option>Cota</option>
+                <option>Gachancipá</option>
+              </select>
+            </label>
+            <label for="r-people">Personas aprox.<input id="r-people" type="number" min="1" step="1" placeholder="120"></label>
+          </div>
+          <label for="r-when">Fecha y hora que proponen<input id="r-when" type="text" placeholder="Ej.: un sábado de octubre, 10 a.m."></label>
+          <div class="two">
+            <label for="r-phone">Teléfono<input id="r-phone" type="tel" placeholder="300 000 0000"></label>
+            <label for="r-mail">Correo<input id="r-mail" type="email" placeholder="tucorreo@…"></label>
+          </div>
+        </form>
+
+        <div class="letter-wrap">
+          <div class="letter" id="letter" aria-live="polite"></div>
+          <div class="letter-actions">
+            <button class="btn" type="button" id="copy-letter">Copiar carta</button>
+            <span class="note" id="letter-note">Los campos en amarillo faltan por llenar.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= UTILITIES ================= -->
+    <section class="block" id="empresas" aria-labelledby="h-emp">
+      <div class="sec-head">
+        <span class="label">Lo básico</span>
+        <h2 id="h-emp">Lo que ya ofrecen EPC y EPZ</h2>
+        <p>Para rutas, horarios y el servicio de aseo sigue acudiendo a tu empresa. Esto es lo que ellas mismas publican, para que no lo busques aquí.</p>
+      </div>
+      <div class="basics">
+        <article>
+          <span class="label">Cajicá</span>
+          <h3>EPC · Empresas Públicas de Cajicá</h3>
+          <ul>
+            <li><a href="https://www.epccajica.gov.co/rutas-de-aseo-2/" target="_blank" rel="noopener">Rutas y horarios de aseo</a></li>
+            <li>Separación de orgánicos en la caneca verde</li>
+            <li><a href="https://www.epccajica.gov.co/emboteya/" target="_blank" rel="noopener">EmboteYa</a> (botellas rellenas de plástico de un solo uso)</li>
+            <li><a href="https://www.epccajica.gov.co/boletin-bio-fabrica-de-bokashi/" target="_blank" rel="noopener">Bio Fábrica de Bokashi</a></li>
+            <li><a href="https://epccajica.gov.co/disposicion-de-aceite-de-cocina-usado/" target="_blank" rel="noopener">Disposición de aceite de cocina usado</a></li>
+            <li><a href="https://www.epccajica.gov.co/programas-ambientales-epc/" target="_blank" rel="noopener">Programas ambientales del PGIRS</a>, Ecoarte y Día del Reciclaje</li>
+          </ul>
+          <p class="contact">Sitio: <span class="mono">epccajica.gov.co</span></p>
+        </article>
+        <article>
+          <span class="label">Zipaquirá</span>
+          <h3>EPZ · Empresas Públicas de Zipaquirá</h3>
+          <ul>
+            <li><a href="https://epz.gov.co/wp/horarios-de-recoleccion/" target="_blank" rel="noopener">Horarios de recolección</a> de ordinarios y orgánicos</li>
+            <li>Servicio especial de aseo (voluminosos) y residuos de poda</li>
+            <li><a href="https://epz.gov.co/wp/programa-creatividad-ecologica/" target="_blank" rel="noopener">Programa Creatividad Ecológica</a></li>
+            <li><a href="https://epz.gov.co/wp/asociacion-de-recicladores-de-zipaquira/" target="_blank" rel="noopener">Asociación de Recicladores de Zipaquirá</a></li>
+            <li><a href="https://epz.gov.co/wp/sensibilizacion-y-educacion-ambiental/" target="_blank" rel="noopener">Sensibilización y educación ambiental</a> (títeres, teatro, mimos)</li>
+          </ul>
+          <p class="contact">Cra. 15 # 1 sur-11 · <span class="mono">311 449 8338</span> · <span class="mono">01 8000 913 666</span> · <span class="mono">correspondencia@epz.gov.co</span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= SOURCES ================= -->
+    <section class="block" id="fuentes" aria-labelledby="h-src">
+      <div class="sec-head">
+        <span class="label">Fuentes</span>
+        <h2 id="h-src">De dónde sale cada dato</h2>
+      </div>
+      <p class="method">Recopilado el 23 de septiembre de 2026 en páginas de alcaldías, CAR, RAP-E Región Central, SENA, programas posconsumo y prensa regional. Revisamos las secciones de aseo y programas ambientales de EPC y EPZ para dejar por fuera lo que ellas ya publican. Varios datos vienen de noticias y las fechas cambian: confirma antes de ir.</p>
+      <ol class="sources" id="sources"></ol>
+    </section>
+  </main>
+
+  <footer>
+    <span>Separa en la Sabana · guía comunitaria, sin vínculo con EPC, EPZ ni las alcaldías</span>
+    <span class="mono">v. 23-09-2026</span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var MUNIS = [
+    {id:"todos", label:"Todos"},
+    {id:"cajica", label:"Cajicá"},
+    {id:"zipaquira", label:"Zipaquirá"},
+    {id:"sabana", label:"Chía y otros"}
+  ];
+  var MUNI_TAG = {cajica:"Cajicá", zipaquira:"Zipaquirá", sabana:"Chía y Sabana", region:"Toda la región"};
+  var CATS = [
+    {id:"todos", label:"Todo"},
+    {id:"trueque", label:"Trueque y beneficios", chip:"Trueque"},
+    {id:"capacitacion", label:"Capacitación y convocatorias", chip:"Capacitación"},
+    {id:"posconsumo", label:"Posconsumo"},
+    {id:"aceite", label:"Aceite usado"},
+    {id:"ropa", label:"Ropa"},
+    {id:"tapas", label:"Tapas"}
+  ];
+  var CAT_LABEL = {};
+  CATS.forEach(function(c){ CAT_LABEL[c.id] = c.label; });
+
+  var S = [
+    {
+      id:"cambio-verde", cat:"trueque", munis:["cajica","region"],
+      title:"Cambio Verde: reciclaje por comida del campo",
+      org:"RAP-E Región Central, con organizaciones de recicladores. ARCA de Cajicá lo opera desde 2016",
+      estado:["Activo en 2026 · por jornadas","ok"],
+      resumen:"Llevas material reciclable, lo pesan y lo cambias por frutas, verduras y otros alimentos comprados a campesinos. En mayo de 2026, en Villa de Leyva, 1 kg de reciclaje se cambió por 2 kg de pera. Las jornadas incluyen talleres de alimentación saludable y de desperdicio de comida.",
+      datos:[
+        ["Reciben","Papel, cartón, plástico, vidrio, aluminio y chatarra, limpios y secos"],
+        ["En la Sabana","La fase de 2019 arrancó en Cajicá el 8 de febrero. En Suba (Bogotá, octubre de 2024) lo operó ARCA: cada kilo se volvía saldo para comprar alimentos a precio de productor."],
+        ["Cómo traerlo a tu municipio","No hay calendario público. La alcaldía, una JAC o un colectivo puede escribirle a la RAP-E y pedir acompañamiento técnico para hacer una jornada."]
+      ],
+      contactos:[["Correo del programa","cambioverde@regioncentralrape.gov.co"],["Teléfono RAP-E","(601) 443 4170"],["Redes","@laregioncentral"]],
+      fuentes:[
+        ["RAP-E: el proyecto Cambio Verde","https://cambioverde.regioncentralrape.gov.co/el-proyecto/"],
+        ["RAP-E: Villa de Leyva, mayo 2026","https://regioncentralrape.gov.co/en-villa-de-leyva-cambiaran-1-kilo-de-reciclaje-por-2-kilos-de-pera-boyacense/"],
+        ["RAP-E: inicio en Cajicá, 2019","https://regioncentralrape.gov.co/intercambio-de-material-reciclable-por-alimentos-en-el-centro-del-pais/"],
+        ["Bogotá.gov.co: jornada en Suba con ARCA","https://bogota.gov.co/mi-ciudad/desarrollo-economico/cambio-verde-en-bogota-intercambia-alimentos-por-reciclaje-19-octubre"],
+        ["RAP-E: balance 2024 y operadores","https://regioncentralrape.gov.co/cambio-verde-el-proyecto-de-economia-circular-que-transforma-la-vida-de-las-personas/"]
+      ]
+    },
+    {
+      id:"zipa-intercambio", cat:"trueque", munis:["zipaquira"],
+      title:"Alimentos a cambio de material recuperado para recicladores",
+      org:"Alcaldía de Zipaquirá, Diócesis de Zipaquirá y Banco de Alimentos",
+      estado:["Inscripciones 2026 cerradas","off"],
+      resumen:"Programa de intercambio social y ambiental: quienes reciclan de oficio entregan material aprovechable y reciben apoyo alimentario. Las inscripciones de 2026 fueron del 2 al 13 de marzo por un enlace en los canales de la Alcaldía.",
+      datos:[
+        ["Requisitos","Sisbén A o B, vivir en Zipaquirá (recibo de servicio público de los últimos 3 meses) y no recibir otros programas sociales del municipio"],
+        ["Prioridad","Gestantes y lactantes, mujeres cabeza de hogar, personas mayores, con discapacidad, víctimas del conflicto o en desnutrición"],
+        ["Próximas inscripciones","Pregunta en la Secretaría de Desarrollo Rural y Ambiente de Zipaquirá"],
+        ["Si no reciclas de oficio","Separa bien y entrega tu bolsa blanca a los recicladores: así tienen más material limpio para cambiar."]
+      ],
+      contactos:[["Banco de Alimentos de la Diócesis (Facebook)","facebook.com/bancodealimentoszipaquira"]],
+      fuentes:[
+        ["Noticias Día a Día, 28 feb 2026","https://noticiasdiaadia.com/cundinamarca/zipaquira-lanza-propuesta-intercambio-social-ambiental-recicladores-nueva-interaccion-fortalecimiento-comunitario"],
+        ["HSB Noticias","https://www.hsbnoticias.com/zipaquira-lanza-programa-de-intercambio-social-y-ambiental-para-apoyar-a-recicladores/"]
+      ]
+    },
+    {
+      id:"ecobot", cat:"trueque", munis:["sabana"],
+      title:"Ecobot: envases por descuentos",
+      org:"Máquina en el C.C. Fontanar, Chía, a la entrada del Bosque Mágico",
+      estado:["Permanente","ok"],
+      resumen:"Metes tus envases en la máquina y te devuelve cupones de descuento en marcas aliadas. En almacenes Éxito, Carulla y algunos centros comerciales también suman Puntos Colombia. Fontanar es la más cercana a Cajicá.",
+      datos:[
+        ["Reciben","Envases plásticos vacíos, latas, Tetra Pak y botellas rellenas de empaques"],
+        ["Otras cercanas","Parque de Usaquén (fachada de la Alcaldía Local) y Jumbo de la 170"]
+      ],
+      contactos:[["Mapa de máquinas","ecobot.com.co/ubicaciones-bogota"]],
+      fuentes:[
+        ["Ecobot: ubicaciones","https://www.ecobot.com.co/ubicaciones-bogota"],
+        ["Ecobot: cómo funciona","https://www.ecobot.com.co/"]
+      ]
+    },
+    {
+      id:"recicladores-capacitacion", cat:"capacitacion", munis:["cajica","zipaquira"],
+      title:"Pide una charla gratis a los recicladores de tu municipio",
+      org:"ARCA y Asoreciclar en Cajicá · Asociación de Recicladores de Zipaquirá (ARZ)",
+      estado:["Deber legal vigente","ok"],
+      resumen:"Las organizaciones que prestan la actividad de aprovechamiento deben «realizar campañas de capacitación de separación en la fuente a sus usuarios». Tu conjunto, colegio o negocio puede pedirles una charla sobre qué separar, cómo presentarlo y qué días pasan.",
+      datos:[
+        ["Norma","Decreto 1077 de 2015, art. 2.3.2.5.4.3, numeral 6, adicionado por el Decreto 596 de 2016"],
+        ["ARCA (Cajicá)","Km 2 vía Cajicá–Tabio · Instagram @arca_cajica"],
+        ["ARZ (Zipaquirá)","44 recicladores con rutas selectivas en unos 36 barrios; se contacta a través de EPZ"]
+      ],
+      contactos:[["ARZ, correo publicado","bgonzalez@eaaaz.com.co"],["EPZ, línea fija","(601) 851 9696"]],
+      go:["#capacitacion","Arma la solicitud"],
+      fuentes:[
+        ["Decreto 596 de 2016, gestor normativo CRA","https://normas.cra.gov.co/gestor/docs/decreto_0596_2016.htm"],
+        ["Alcaldía de Cajicá: ARCA y Asoreciclar","https://cajica.gov.co/invitacion-para-que-los-recicladores-informales-se-integren-legalmente-a-las-asociaciones-de-reciclaje/"],
+        ["EPZ: Asociación de Recicladores de Zipaquirá","https://epz.gov.co/wp/asociacion-de-recicladores-de-zipaquira/"],
+        ["EAAAZ: contacto de la ARZ","https://eaaaz.com.co/nuestros-servicios/aseo/reciclaje/asociacion-de-recicladores-de-zipaquira/"]
+      ]
+    },
+    {
+      id:"sec-cajica", cat:"capacitacion", munis:["cajica"],
+      title:"Capacitación de la Secretaría de Ambiente de Cajicá",
+      org:"Secretaría de Ambiente y Desarrollo Rural · Alcaldía de Cajicá",
+      estado:["Por solicitud","ok"],
+      resumen:"La Secretaría maneja el plan de residuos (PGIRS) y la educación ambiental del municipio, y ha dado capacitaciones por sectores, como la de trabajadores de estética y belleza sobre el manejo de sus residuos. Puedes pedir una para tu conjunto, colegio, JAC o gremio con una solicitud escrita.",
+      datos:[
+        ["Dirección","Calle 3 Sur # 5-86, Cajicá"],
+        ["Horario","Lun a jue 8:00–1:00 y 2:00–5:30 · vie 8:00–1:00 y 2:00–4:30"],
+        ["Plazo de respuesta","15 días hábiles, por ser derecho de petición (Ley 1755 de 2015)"]
+      ],
+      contactos:[["Correo PQRS","ventanillapqrs-alcaldia@cajica.gov.co"],["Celular PQRS","315 237 8409"],["PBX","(601) 883 7077 ext. 4005 / 4006"]],
+      go:["#capacitacion","Arma la solicitud"],
+      fuentes:[
+        ["Alcaldía de Cajicá: Secretaría de Ambiente","https://cajica.gov.co/secretaria-de-ambiente/"],
+        ["La Tribuna: capacitación a estética y belleza","https://www.periodicolatribuna.com/cajica-fortalece-el-manejo-de-residuos/"]
+      ]
+    },
+    {
+      id:"sec-zipa", cat:"capacitacion", munis:["zipaquira"],
+      title:"Formación con la Alcaldía de Zipaquirá y el SENA",
+      org:"Secretaría de Desarrollo Rural y Ambiente · Alcaldía de Zipaquirá",
+      estado:["Por convocatoria o solicitud","ok"],
+      resumen:"En 2024 la Secretaría abrió con el SENA un curso de 48 horas para recicladores, con inscripción presencial y fotocopia de la cédula. También organiza la Gran Reciclatón y el intercambio por alimentos. Para una charla en tu comunidad, radica la solicitud por PQRSD.",
+      datos:[
+        ["Curso 2024","48 horas sobre capacidades operativas y administrativas; inscripciones del 2 al 12 de agosto"]
+      ],
+      contactos:[["Radicar en","zipaquira-cundinamarca.gov.co"]],
+      go:["#capacitacion","Arma la solicitud"],
+      fuentes:[
+        ["Zipa Exiliados: curso para recuperadores, ago 2024","https://zipa-exiliados.com/capacitacion-para-recuperadores-ambientales-de-zipaquira/"]
+      ]
+    },
+    {
+      id:"car-aulas", cat:"capacitacion", munis:["region"],
+      title:"Aulas ambientales móviles de la CAR",
+      org:"CAR Cundinamarca · Dirección Regional Sabana Centro, con sede en Zipaquirá",
+      estado:["Desde 2025 · por solicitud","ok"],
+      resumen:"Dos camiones-aula con paneles solares, realidad virtual y juegos que recorren los 104 municipios de la CAR. Trabajan biodiversidad, cambio climático y sostenibilidad con colegios y comunidades. Para pedir una visita, escribe a la CAR por sus canales de atención dirigiéndote a la Dirección Regional Sabana Centro.",
+      datos:[
+        ["Cupo","Sala para 10 personas por sesión, accesible para personas con movilidad reducida"]
+      ],
+      contactos:[["Canales de atención","car.gov.co"]],
+      go:["#capacitacion","Arma la solicitud"],
+      fuentes:[
+        ["El Dorado Radio: lanzamiento, abril 2025","https://eldoradoradio.cundinamarca.gov.co/noticias/car-lanza-aulas-ambientales-moviles-para-llevar-educacion-ecologica/"],
+        ["CAR: Dirección Regional Sabana Centro","https://www.car.gov.co/vercontenido/124"],
+        ["CAR: atención a la ciudadanía","https://www.car.gov.co/vercontenido/2269"]
+      ]
+    },
+    {
+      id:"sena", cat:"capacitacion", munis:["region"],
+      title:"Cursos gratuitos del SENA sobre residuos",
+      org:"SENA · plataforma de oferta Betowa",
+      estado:["Según oferta vigente","neutral"],
+      resumen:"Formación gratuita con certificado. En Betowa aparecen el curso virtual «Supervisión y gestión de residuos peligrosos» (40 horas, desde los 14 años) y el técnico presencial «Manejo integral de residuos sólidos». Sirve para administradores, personal de aseo de conjuntos y recicladores.",
+      datos:[],
+      contactos:[["Buscar cursos","betowa.sena.edu.co"]],
+      fuentes:[
+        ["Betowa: residuos peligrosos (virtual)","https://betowa.sena.edu.co/oferta/supervision-y-gestion-de-residuos-peligrosos?programId=73762"],
+        ["Betowa: manejo integral de residuos sólidos","https://betowa.sena.edu.co/oferta/manejo-integral-de-residuos-solidos?programId=107&modality=P"]
+      ]
+    },
+    {
+      id:"concurso-cajica", cat:"capacitacion", munis:["cajica"],
+      title:"Concurso de Prácticas Ambientales Escolares y Comunitarias 2026",
+      org:"Alcaldía de Cajicá",
+      estado:["Cierra el 30 sep 2026","hot"],
+      resumen:"Si tu colegio, colectivo o comunidad separa, composta o recicla, puedes postular la experiencia para que el municipio la reconozca y la muestre. Se envía un video de máximo un minuto con la iniciativa, sus actividades y los resultados de 2026.",
+      datos:[
+        ["Quién participa","Instituciones educativas, organizaciones, colectivos y comunidad en general"]
+      ],
+      contactos:[["Enviar a","ventanillapqrs-alcaldia@cajica.gov.co"],["Celular PQRS","315 237 8409"]],
+      fuentes:[
+        ["Alcaldía de Cajicá, 15 sep 2026","https://cajica.gov.co/las-mejores-practicas-ambientales-de-cajica-pueden-ser-protagonistas/"]
+      ]
+    },
+    {
+      id:"car-posconsumo", cat:"posconsumo", munis:["cajica","zipaquira","sabana"],
+      title:"Jornada posconsumo «Me sumo con mi consumo»",
+      org:"CAR Cundinamarca con las alcaldías",
+      estado:["Anual · la de 2026 ya pasó","off"],
+      resumen:"Una vez al año la CAR abre puntos para entregar lo que no va en ninguna bolsa. En Sabana Centro participaron Cajicá, Chía, Cogua, Cota, Gachancipá, Tabio, Tenjo, Zipaquirá y Sopó (solo llantas). En Cajicá fue del 14 al 16 de septiembre de 2026 y se recogieron 334,64 kg de materiales y 24 llantas.",
+      datos:[
+        ["Reciben","Computadores, celulares y electrónicos; pilas AA, AAA, C, D y de botón; bombillos y luminarias; insecticidas domésticos; medicamentos vencidos; llantas; baterías de carro; aceite de cocina usado"],
+        ["No reciben","Jeringas, cortopunzantes, termómetros, gasas, baterías industriales, llantas de maquinaria pesada ni aceite de motor"]
+      ],
+      contactos:[],
+      fuentes:[
+        ["Noticentro: 12 puntos de la CAR, sep 2026","https://www.noticentrocolombia.com/2026/09/14/que-hacer-con-llantas-pilas-y-electrodomesticos-viejos-la-car-habilita-12-puntos-de-recoleccion-posconsumo/medio-ambiente/22837/"],
+        ["Alcaldía de Cajicá: jornada 2026","https://cajica.gov.co/jornada-posconsumo-2026-promovera-la-disposicion-adecuada-de-residuos/"],
+        ["Alcaldía de Cajicá: resultados 2026","https://cajica.gov.co/cajica-avanza-en-consumo-responsable-y-gestion-de-residuos/"]
+      ]
+    },
+    {
+      id:"reciclatones", cat:"posconsumo", munis:["cajica","zipaquira","sabana"],
+      title:"Reciclatones municipales",
+      org:"Alcaldías de Zipaquirá, Cajicá y Chía",
+      estado:["Recurrentes","neutral"],
+      resumen:"Jornadas de uno a cinco días para entregar electrodomésticos, electrónicos y residuos especiales. Se anuncian por las redes de cada alcaldía, a veces con pocos días de aviso.",
+      datos:[
+        ["Zipaquirá","Gran Reciclatón el 22 mar 2025 en el Parque La Esmeralda, y el 28 y 29 ago 2024 en el Parque de la Esperanza, el salón comunal San Jorge/La Capilla y el Parque de la Arena–Barandillas. Recibió neveras, lavadoras, llantas, medicamentos, pilas, aceite, reciclables y tapas. Hubo además jornada posconsumo con la CAR del 3 al 5 jun 2025."],
+        ["Cajicá","Reciclatón de aparatos eléctricos del 26 al 30 ago 2024 en la Secretaría de Ambiente (El Bohío) y en la Cra. 4 # 1-37"],
+        ["Chía","16 sep 2026 con la CAR: 2,9 toneladas recogidas"]
+      ],
+      contactos:[],
+      fuentes:[
+        ["Noticias Día a Día: Gran Reciclatón 2025","https://noticiasdiaadia.com/cundinamarca/zipaquira-jornada-ecologica"],
+        ["Extrategia Medios: Reciclatón Zipaquirá 2024","https://extrategiamedios.com/gran-reciclaton-municipal-2024-en-zipaquira-el-28-y-29-de-agosto/"],
+        ["El Observador: posconsumo Zipaquirá 2025","https://elobservador.com.co/zipaquira-se-suma-al-cuidado-ambiental-con-jornada-posconsumo-video/"],
+        ["Alcaldía de Cajicá: Reciclatón 2024","https://cajica.gov.co/llega-reciclaton-a-cajica/"],
+        ["La Tribuna: Reciclatón Chía 2026","https://www.periodicolatribuna.com/chia-recolecto-residuos-en-jornada-de-reciclaton/"]
+      ]
+    },
+    {
+      id:"reconecta", cat:"posconsumo", munis:["cajica","region"],
+      title:"Reconecta: aparatos eléctricos con recolección a domicilio",
+      org:"Grupo Colec · sistema colectivo de productores de aparatos eléctricos",
+      estado:["Permanente","ok"],
+      resumen:"Recibe aparatos eléctricos y electrónicos en puntos fijos y tiene recolección a domicilio que se pide desde su página. En 2026 hizo jornadas con la Alcaldía de Cajicá: en la segunda se recogieron 134,4 kg.",
+      datos:[
+        ["Sede","Parque Industrial San Jorge, local 141, Calle 2 # 18-93, Mosquera–Madrid"]
+      ],
+      contactos:[["WhatsApp","317 369 5598"],["WhatsApp","320 337 7852"],["Correo","pqr@grupocolec.com"]],
+      fuentes:[
+        ["Grupo Colec: Reconecta","https://grupocolec.com/reconecta/"],
+        ["Alcaldía de Cajicá: 134 kg, sep 2026","https://cajica.gov.co/mas-de-134-kilos-de-residuos-electronicos-fueron-recolectados-en-cajica/"]
+      ]
+    },
+    {
+      id:"red-verde", cat:"posconsumo", munis:["cajica","zipaquira"],
+      title:"Contenedor Red Verde para pequeños electrodomésticos",
+      org:"Red Verde · punto en Groupe SEB Andean, Km 1 vía Cajicá–Zipaquirá",
+      estado:["Permanente","ok"],
+      resumen:"Contenedor fijo sobre la vía entre los dos municipios. Es para personas naturales, no para empresas.",
+      datos:[
+        ["Reciben","Licuadoras, cafeteras, sanducheras, picatodo, batidoras, ollas arroceras, secadores, cepillos eléctricos, controles remotos y equipos de sonido"]
+      ],
+      contactos:[["Buscador","redverde.co"]],
+      fuentes:[
+        ["Red Verde: localiza tu contenedor","https://www.redverde.co/localiza-contenedor-mas-cercano/"]
+      ]
+    },
+    {
+      id:"posconsumo-permanentes", cat:"posconsumo", munis:["region"],
+      title:"Contenedores fijos para medicamentos, pilas, bombillos y computadores",
+      org:"Programas posconsumo de los fabricantes",
+      estado:["Permanente","ok"],
+      resumen:"Los fabricantes tienen contenedores fijos en droguerías, supermercados y centros comerciales. Cada programa tiene su mapa: busca tu municipio antes de salir.",
+      datos:[
+        ["Medicamentos vencidos","Punto Azul · mapa.puntoazul.com.co · no recibe jeringas ni agujas"],
+        ["Pilas","Pilas con el Ambiente · pilascolombia.com/puntos · línea 318 622 7320"],
+        ["Bombillos","Lúmina · lumina.com.co"],
+        ["Computadores y periféricos","EcoCómputo · ecocomputo.com"]
+      ],
+      contactos:[],
+      fuentes:[
+        ["Punto Azul","https://puntoazul.com.co/puntos-azules/"],
+        ["Pilas con el Ambiente","https://www.pilascolombia.com/puntos"],
+        ["Lúmina","https://lumina.com.co/NewSite/index.html"],
+        ["EcoCómputo","https://ecocomputo.com/"]
+      ]
+    },
+    {
+      id:"aceite", cat:"aceite", munis:["cajica","zipaquira","sabana"],
+      title:"Recolectores de aceite de cocina autorizados por la CAR",
+      org:"Listado de gestores de aceite de cocina usado, CAR 2024",
+      estado:["Activos en el listado 2024","ok"],
+      resumen:"Sirve para restaurantes, conjuntos y colegios que juntan varios galones. Nunca lo botes al lavaplatos: déjalo enfriar y guárdalo en una botella plástica bien tapada, llena hasta tres cuartos.",
+      datos:[
+        ["Cajicá","ARCA · Km 2 vía Cajicá–Tabio"],
+        ["Chía, Cajicá, Tabio, Cota y Zipaquirá","Asociación de Recicladores Punto Calidad de Vida E.S.P. · Cra. 12 # 1-99, Chía"],
+        ["Chía, Cajicá y Tocancipá","Bazero y C.I. Importex, con sede en Bogotá"],
+        ["Zipaquirá","La Alcaldía instaló 30 contenedores en parques (Principal, La Esperanza, La Independencia, Prados del Mirador, Las Villas, San Rafael y Villa María). El dato es de 2019: confirma que sigan."]
+      ],
+      contactos:[],
+      fuentes:[
+        ["Alcaldía de Chía: listado CAR de gestores 2024 (PDF)","https://www.chia-cundinamarca.gov.co/medioambiente/LISTADO%20DE%20GESTORES%20AUTORIZADOS%20ACEITES%20DE%20COCINA%20USADOS%20CAR%202024.pdf"],
+        ["Extrategia Medios: contenedores en Zipaquirá","https://extrategiamedios.com/zipaquira-recicla-aceite-de-cocina-usado/"]
+      ]
+    },
+    {
+      id:"renovamoda", cat:"ropa", munis:["sabana"],
+      title:"RenovaModa: contenedor de ropa usada en Chía",
+      org:"CAR y Cooperación Alemana (GIZ) · operador Recupera CO",
+      estado:["Desde mayo de 2025","ok"],
+      resumen:"Contenedor en el Centro Comercial Centro Chía. La ropa se clasifica, se limpia y se reutiliza o se recicla. En Bogotá la misma red tiene más de 30 puntos.",
+      datos:[
+        ["Reciben","Ropa en buen estado"],
+        ["No reciben","Ropa interior ni vestidos de baño"]
+      ],
+      contactos:[],
+      fuentes:[
+        ["El Tiempo: contenedores en Chía","https://www.eltiempo.com/cultura/gente/contenedores-para-ropa-usada-en-chia-proyecto-renovamoda-busca-reducir-residuos-textiles-3459773"],
+        ["Periodismo Público, jun 2025","https://periodismopublico.com/chia-tendra-contenedores-para-recoleccion-de-ropa-usada-apostaran-por-reducir-la-contaminacion-en-cundinamarca"],
+        ["Portafolio: 31 puntos en Bogotá","https://www.portafolio.co/economia/regiones/donde-reciclar-ropa-en-bogota-conozca-los-31-puntos-de-renovamoda-para-entregar-textiles-usados-497239"]
+      ]
+    },
+    {
+      id:"tapas", cat:"tapas", munis:["region"],
+      title:"Tapas para Sanar",
+      org:"Fundación Sanar, niños con cáncer",
+      estado:["Permanente","ok"],
+      resumen:"Lo que se recauda con las tapas plásticas financia el acompañamiento a niños con cáncer. También reciben papel, cartón, botellas, chatarra, electrónicos, pilas y llaves. Funciona bien como colecta de colegio o conjunto: en Sopó el municipio juntó 672,5 kg.",
+      datos:[
+        ["Entrega","Casa Sanar, Av. Caracas # 54-59, Bogotá · lun a vie 8:00–5:00, sáb 8:00–12:00"]
+      ],
+      contactos:[["Línea Tapas para Sanar","315 562 9898"],["Correo","almacenista@sanarcancer.org"]],
+      fuentes:[
+        ["Fundación Sanar: Tapas para Sanar","https://www.sanarcancer.org/dev-tapas-para-sanar/"],
+        ["El Hablador: colecta en Sopó","https://elhablador.net/6725-kilos-de-tapas-plasticas-para-los-ninos-de-sanar-cancer-en-sopo/"]
+      ]
+    }
+  ];
+
+  var EXTRA_SOURCES = [
+    ["Minambiente: código nacional de colores (Res. 2184 de 2019)","https://archivo.minambiente.gov.co/index.php/noticias-minambiente/4595-gobierno-unifica-el-codigo-de-colores-para-la-separacion-de-residuos-en-la-fuente-a-nivel-nacional","Guía rápida"],
+    ["Alcaldía de Cajicá: ruta selectiva de reciclaje","https://cajica.gov.co/ruta-selectiva-de-reciclaje-en-cajica/","Guía rápida"],
+    ["Extrategia Medios: bolsas verde y negra en Zipaquirá","https://extrategiamedios.com/a-la-hora-de-clasificar-sus-residuos-en-zipaquira-sabe-que-va-en-la-bolsa-verde-y-que-va-en-la-bolsa-negra/","Guía rápida"],
+    ["EPZ: horarios de recolección","https://epz.gov.co/wp/horarios-de-recoleccion/","Guía rápida"],
+    ["EPZ: servicios","https://epz.gov.co/wp/servicios/","EPC y EPZ"],
+    ["EPC: programas ambientales","https://www.epccajica.gov.co/programas-ambientales-epc/","EPC y EPZ"]
+  ];
+
+  /* ---------- helpers ---------- */
+  function esc(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c];
+    });
+  }
+  function norm(s){
+    return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+  }
+  function copyText(text, btn, doneLabel){
+    var original = btn.getAttribute("data-label") || btn.textContent;
+    btn.setAttribute("data-label", original);
+    function ok(){
+      btn.textContent = doneLabel || "Copiado";
+      btn.classList.add("done");
+      setTimeout(function(){ btn.textContent = original; btn.classList.remove("done"); }, 1600);
+    }
+    function fallback(){
+      var target = btn.parentNode && btn.parentNode.querySelector(".cv");
+      if (target){
+        var r = document.createRange(); r.selectNodeContents(target);
+        var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+      }
+      btn.textContent = "Selecciónalo y copia";
+      setTimeout(function(){ btn.textContent = original; }, 2200);
+    }
+    try{
+      if (navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(ok, fallback);
+      } else { fallback(); }
+    }catch(e){ fallback(); }
+  }
+
+  /* ---------- filters ---------- */
+  var state = {muni:"todos", cat:"todos", q:""};
+
+  function matches(s, muni, cat, q){
+    if (muni !== "todos" && s.munis.indexOf(muni) === -1 && s.munis.indexOf("region") === -1) return false;
+    if (cat !== "todos" && s.cat !== cat) return false;
+    if (q){
+      var hay = norm([s.title, s.org, s.resumen, CAT_LABEL[s.cat], s.datos.map(function(d){return d.join(" ");}).join(" ")].join(" "));
+      var terms = norm(q).split(/\s+/).filter(Boolean);
+      for (var i=0;i<terms.length;i++){ if (hay.indexOf(terms[i]) === -1) return false; }
+    }
+    return true;
+  }
+
+  function buildChips(){
+    var fm = document.getElementById("f-muni");
+    MUNIS.forEach(function(m){
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "chip"; b.dataset.muni = m.id;
+      b.setAttribute("aria-pressed", m.id === state.muni ? "true" : "false");
+      b.textContent = m.label;
+      fm.appendChild(b);
+    });
+    var fc = document.getElementById("f-cat");
+    CATS.forEach(function(c){
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "chip"; b.dataset.cat = c.id;
+      b.setAttribute("aria-pressed", c.id === state.cat ? "true" : "false");
+      b.innerHTML = esc(c.chip || c.label) + '<span class="n"></span>';
+      fc.appendChild(b);
+    });
+    fm.addEventListener("click", function(e){
+      var b = e.target.closest("[data-muni]"); if (!b) return;
+      state.muni = b.dataset.muni; render();
+    });
+    fc.addEventListener("click", function(e){
+      var b = e.target.closest("[data-cat]"); if (!b) return;
+      state.cat = b.dataset.cat; render();
+    });
+    document.getElementById("q").addEventListener("input", function(e){
+      state.q = e.target.value; render();
+    });
+  }
+
+  function cardHTML(s){
+    var munis = s.munis.map(function(m){ return '<span class="muni">'+esc(MUNI_TAG[m])+'</span>'; }).join("");
+    var datos = s.datos.length ? '<dl>' + s.datos.map(function(d){
+      return '<div><dt>'+esc(d[0])+'</dt><dd>'+esc(d[1])+'</dd></div>';
+    }).join("") + '</dl>' : "";
+    var contactos = s.contactos.length ? '<div class="contacts">' + s.contactos.map(function(c){
+      return '<div class="crow"><span class="cl">'+esc(c[0])+'</span><span class="cv">'+esc(c[1])+'</span><button type="button" class="copy" data-copy="'+esc(c[1])+'">Copiar</button></div>';
+    }).join("") + '</div>' : "";
+    var go = s.go ? '<a class="btn ghost go" href="'+esc(s.go[0])+'">'+esc(s.go[1])+' →</a>' : "";
+    var src = '<p class="src"><span>Fuente:</span>' + s.fuentes.map(function(f){
+      return '<a href="'+esc(f[1])+'" target="_blank" rel="noopener">'+esc(f[0])+'</a>';
+    }).join("") + '</p>';
+    return '<article class="card" id="s-'+esc(s.id)+'">'
+      + '<div class="card-top"><span class="label">'+esc(CAT_LABEL[s.cat])+'</span><span class="pill '+esc(s.estado[1])+'">'+esc(s.estado[0])+'</span></div>'
+      + '<h3>'+esc(s.title)+'</h3>'
+      + '<p class="org">'+esc(s.org)+'</p>'
+      + '<div class="munis">'+munis+'</div>'
+      + '<p>'+esc(s.resumen)+'</p>'
+      + datos + contactos + go + src
+      + '</article>';
+  }
+
+  function render(){
+    document.querySelectorAll("#f-muni .chip").forEach(function(b){
+      b.setAttribute("aria-pressed", b.dataset.muni === state.muni ? "true" : "false");
+    });
+    document.querySelectorAll("#f-cat .chip").forEach(function(b){
+      b.setAttribute("aria-pressed", b.dataset.cat === state.cat ? "true" : "false");
+      var n = S.filter(function(s){ return matches(s, state.muni, b.dataset.cat, state.q); }).length;
+      b.querySelector(".n").textContent = n;
+    });
+    var list = S.filter(function(s){ return matches(s, state.muni, state.cat, state.q); });
+    var cards = document.getElementById("cards");
+    cards.innerHTML = list.length ? list.map(cardHTML).join("")
+      : '<p class="empty">No hay servicios con esos filtros. Prueba con «Todos» o borra la búsqueda.</p>';
+    document.getElementById("count").innerHTML = '<strong>'+list.length+'</strong> de '+S.length+' servicios';
+  }
+
+  document.addEventListener("click", function(e){
+    var b = e.target.closest("[data-copy]");
+    if (b){ copyText(b.getAttribute("data-copy"), b); }
+  });
+
+  document.getElementById("go-posconsumo").addEventListener("click", function(){
+    state.muni = "todos"; state.cat = "posconsumo"; state.q = "";
+    document.getElementById("q").value = "";
+    render();
+    document.getElementById("directorio").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"});
+  });
+
+  /* ---------- sources ---------- */
+  function buildSources(){
+    var seen = {}, items = [];
+    S.forEach(function(s){
+      s.fuentes.forEach(function(f){
+        if (seen[f[1]]) return; seen[f[1]] = 1;
+        items.push([f[0], f[1], s.title]);
+      });
+    });
+    EXTRA_SOURCES.forEach(function(f){ if (!seen[f[1]]){ seen[f[1]] = 1; items.push(f); } });
+    document.getElementById("sources").innerHTML = items.map(function(f){
+      return '<li><a href="'+esc(f[1])+'" target="_blank" rel="noopener">'+esc(f[0])+'</a> <span class="for">· '+esc(f[2])+'</span></li>';
+    }).join("");
+  }
+
+  /* ---------- request builder ---------- */
+  var RECIP = {
+    arca:{label:"ARCA · Recicladores de Cajicá", muni:"Cajicá", tipo:"recicladores",
+      saludo:"Señores\nAsociación de Recicladores de Cajicá (ARCA)\nKm 2 vía Cajicá–Tabio, Cajicá",
+      send:[["Dirección","Km 2 vía Cajicá–Tabio"],["Instagram","@arca_cajica"]]},
+    arz:{label:"ARZ · Recicladores de Zipaquirá", muni:"Zipaquirá", tipo:"recicladores",
+      saludo:"Señores\nAsociación de Recicladores de Zipaquirá (ARZ)\nZipaquirá",
+      send:[["Correo publicado","bgonzalez@eaaaz.com.co"],["Copia a EPZ","correspondencia@epz.gov.co"]]},
+    secCajica:{label:"Secretaría de Ambiente de Cajicá", muni:"Cajicá", tipo:"alcaldia",
+      saludo:"Señores\nSecretaría de Ambiente y Desarrollo Rural\nAlcaldía Municipal de Cajicá",
+      send:[["Correo PQRS","ventanillapqrs-alcaldia@cajica.gov.co"],["Celular PQRS","315 237 8409"]]},
+    secZipa:{label:"Secretaría de Desarrollo Rural y Ambiente de Zipaquirá", muni:"Zipaquirá", tipo:"alcaldia",
+      saludo:"Señores\nSecretaría de Desarrollo Rural y Ambiente\nAlcaldía Municipal de Zipaquirá",
+      send:[["Radicar en","PQRSD de zipaquira-cundinamarca.gov.co"]]},
+    car:{label:"CAR · Dirección Regional Sabana Centro", muni:"Zipaquirá", tipo:"car",
+      saludo:"Señores\nCorporación Autónoma Regional de Cundinamarca (CAR)\nDirección Regional Sabana Centro",
+      send:[["Radicar en","Canales de atención de car.gov.co"]]}
+  };
+
+  var F = {};
+  ["to","name","role","place","muni","people","when","phone","mail"].forEach(function(k){ F[k] = document.getElementById("r-"+k); });
+
+  Object.keys(RECIP).forEach(function(k){
+    var o = document.createElement("option"); o.value = k; o.textContent = RECIP[k].label; F.to.appendChild(o);
+  });
+
+  function today(){
+    try { return new Date().toLocaleDateString("es-CO",{day:"numeric", month:"long", year:"numeric"}); }
+    catch(e){ return "23 de septiembre de 2026"; }
+  }
+
+  // Build letter as array of [text, isPlaceholder] segments
+  function letterParts(){
+    var r = RECIP[F.to.value];
+    var parts = [];
+    function t(s){ parts.push([s,false]); }
+    function v(val, ph){ val = (val||"").trim(); if (val) parts.push([val,false]); else parts.push(["["+ph+"]",true]); }
+
+    var muni = F.muni.value;
+    t(muni + ", " + today() + "\n\n");
+    t(r.saludo + "\n\n");
+    t("Asunto: Solicitud de " + (r.tipo === "car" ? "visita del aula ambiental móvil" : "capacitación en separación en la fuente") + " para ");
+    v(F.place.value, "nombre del conjunto, colegio o barrio"); t("\n\n");
+    t("Cordial saludo.\n\n");
+    t("Mi nombre es "); v(F.name.value, "tu nombre");
+    t(" y soy " + F.role.value + " de "); v(F.place.value, "nombre del conjunto, colegio o barrio");
+    t(", en " + muni + ". Somos cerca de "); v(F.people.value, "número"); t(" personas y queremos separar mejor nuestros residuos.\n\n");
+
+    if (r.tipo === "recicladores"){
+      t("Como organización que presta la actividad de aprovechamiento en el municipio, les solicitamos una charla o taller de separación en la fuente para nuestra comunidad, de acuerdo con el numeral 6 del artículo 2.3.2.5.4.3 del Decreto 1077 de 2015, adicionado por el Decreto 596 de 2016, que establece como deber del prestador «realizar campañas de capacitación de separación en la fuente a sus usuarios».\n\n");
+    } else if (r.tipo === "alcaldia"){
+      t("El artículo 2.3.2.5.2.1.3 del Decreto 1077 de 2015 dispone que el ente territorial y los prestadores de la actividad de aprovechamiento deben implementar de manera permanente y coordinada campañas educativas sobre reciclaje y la adecuada presentación de los residuos. Por eso les solicitamos una capacitación en separación en la fuente para nuestra comunidad, en lo posible junto con la organización de recicladores que atiende nuestro sector.\n\n");
+    } else {
+      t("Les solicitamos programar una visita de las aulas ambientales móviles de la CAR a nuestra comunidad, con énfasis en separación en la fuente y manejo de residuos.\n\n");
+    }
+
+    t("Nos gustaría tratar el código de colores (Resolución 2184 de 2019), qué materiales se aprovechan en " + muni + ", los días de recolección y cómo presentar el material.\n\n");
+    t("Proponemos como fecha "); v(F.when.value, "fecha y hora"); t(", en "); v(F.place.value, "lugar"); t(".\n\n");
+    if (r.tipo !== "recicladores"){
+      t("Presento esta solicitud en ejercicio del derecho de petición (Ley 1755 de 2015).\n\n");
+    }
+    t("Quedo atento(a) a su respuesta.\n\n");
+    v(F.name.value, "tu nombre"); t("\n");
+    t(F.role.value.charAt(0).toUpperCase() + F.role.value.slice(1) + " · "); v(F.place.value, "nombre del conjunto, colegio o barrio"); t("\n");
+    v(F.phone.value, "teléfono"); t(" · "); v(F.mail.value, "correo");
+    return parts;
+  }
+
+  function renderLetter(){
+    var r = RECIP[F.to.value];
+    var parts = letterParts();
+    var missing = parts.some(function(p){ return p[1]; });
+    document.getElementById("letter").innerHTML = parts.map(function(p){
+      return p[1] ? '<span class="ph">'+esc(p[0])+'</span>' : esc(p[0]);
+    }).join("");
+    document.getElementById("letter-note").textContent = missing ? "Los campos en amarillo faltan por llenar." : "Lista para copiar y enviar.";
+    document.getElementById("r-sendto").innerHTML = '<span class="label">Enviar a</span>' + r.send.map(function(c){
+      return '<div class="crow"><span class="cl">'+esc(c[0])+'</span><span class="cv">'+esc(c[1])+'</span><button type="button" class="copy" data-copy="'+esc(c[1])+'">Copiar</button></div>';
+    }).join("");
+  }
+
+  F.to.addEventListener("change", function(){
+    F.muni.value = RECIP[F.to.value].muni;
+    renderLetter();
+  });
+  document.getElementById("req").addEventListener("input", renderLetter);
+  document.getElementById("req").addEventListener("change", renderLetter);
+  document.getElementById("req").addEventListener("submit", function(e){ e.preventDefault(); });
+  document.getElementById("copy-letter").addEventListener("click", function(){
+    var text = letterParts().map(function(p){ return p[0]; }).join("");
+    var btn = this;
+    try{
+      if (navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = "Carta copiada";
+          setTimeout(function(){ btn.textContent = "Copiar carta"; }, 1800);
+        }, selectLetter);
+      } else { selectLetter(); }
+    }catch(e){ selectLetter(); }
+    function selectLetter(){
+      var el = document.getElementById("letter");
+      var rg = document.createRange(); rg.selectNodeContents(el);
+      var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(rg);
+      document.getElementById("letter-note").textContent = "La carta quedó seleccionada: cópiala con Ctrl+C o mantén presionado.";
+    }
+  });
+
+  /* ---------- boot ---------- */
+  buildChips();
+  render();
+  buildSources();
+  renderLetter();
+  document.getElementById("fact-n").textContent = S.length;
+})();
+</script>
+</body>
+</html>
